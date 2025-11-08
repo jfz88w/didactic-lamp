@@ -1,7 +1,7 @@
-import React, { FC, ReactNode, useState } from 'react';
-import background from './assets/background.gif';
-import Dojo from './Dojo';
-import './Profile.css';
+import React, { FC, ReactNode, useState } from "react";
+import background from "./assets/background.gif";
+import Dojo from "./Dojo";
+import "./Profile.css";
 
 type SectionProps = {
   title: string;
@@ -47,12 +47,53 @@ const Profile: FC = () => {
     >
       <div className="profile-card">
         <div className="profile-content">
-          <h1 className="profile-title">Jess</h1>
-          <p className="profile-subtitle">Hi there, Human.</p>
+          <h1 className="profile-title">In a world where books are dying</h1>
+          <p className="profile-subtitle">I'm glad you're here!</p>
           <p className="profile-desc">
-            Are you suffering too? You only have to make it to the end of the day.
+            Here are some of my favourite reads which I highly recommend :D
           </p>
 
+          <div className="profile-book-recs">
+            <Section title="Fiction">
+              <ul className="profile-fiction">
+                <li>
+                  <i>Rebecca</i> - Daphne Du Maurier
+                </li>
+                <li>
+                  <i>The Call of the Wild</i> - Jack London
+                </li>
+                <li>
+                  <i>East of Eden</i> - John Steinbeck
+                </li>
+                <li>
+                  <i>Stoner</i> - John Williams
+                </li>
+                <li>
+                  <i>Anna Karenina</i> - Leo Tolstoy
+                </li>
+              </ul>
+            </Section>
+
+            <Section title="Non-Fiction">
+              <ul className="profile-nonfiction">
+                <li>
+                  <i>4000 weeks</i> - Oliver Burkeman
+                </li>
+                <li>
+                  <i>Atomic Habits</i> - James Clear
+                </li>
+                <li>
+                  <i>A Bright Ray of Darkness </i>- Ethan Hawke
+                </li>
+                <li>
+                  <i>Are Prisons Obsolete?</i> - An essay by Angela Y.Davis
+                </li>
+              </ul>
+            </Section>
+          </div>
+          {/* <button className="fight-me-btn" onClick={() => setDojoMode(true)}>
+            Fight me!
+          </button> */}
           <div className="profile-socials">
             <SocialLink
               href="https://www.instagram.com/jess_pw_/"
@@ -64,31 +105,8 @@ const Profile: FC = () => {
             />
           </div>
 
-          <Section title="I'm scared of">
-            <ul className="profile-skills-list">
-              <li>Mosquitoes</li>
-              <li>C++</li>
-              <li>Unemployment</li>
-              <li>Small squishy things</li>
-              <li>Toddlers</li>
-            </ul>
-          </Section>
-
-          <Section title="Projects">
-            <ul className="profile-projects-list">
-              <li>Girls Programming Network (GPN)</li>
-              <li>UNSW Campus Runners</li>
-              <li>High School Outreach (maths enrichment club)</li>
-              <li>Taido</li>
-            </ul>
-          </Section>
-
-          <button className="fight-me-btn" onClick={() => setDojoMode(true)}>
-            Fight me!
-          </button>
-
           <footer className="profile-footer">
-            &copy; {new Date().getFullYear()} Jessica Wu. All rights reserved.
+            &copy; {new Date().getFullYear()} Jess Wu.
           </footer>
         </div>
       </div>
