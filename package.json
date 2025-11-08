@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<username>.github.io/<repo-name>",
+  "homepage": "https://jfz88w.github.io/didactic-lamp",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
